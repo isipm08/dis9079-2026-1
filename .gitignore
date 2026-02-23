@@ -1,6 +1,9 @@
 # Apple
 .DS_Store
 
+# Arduino
+arduino_secrets.h
+
 # Node
 node_modules/
 npm-debug.log
@@ -8,3 +11,4 @@ package-lock.json
 
 # Mosquitto
 log.txt
+
