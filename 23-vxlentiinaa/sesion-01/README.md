@@ -2,11 +2,6 @@
 
 lunes 09 marzo 2026
 
----
-# CLASES-2026
-
----
-
 ## Interacción digital / 09-03-26
 
 pausa 16:00-16:20
