@@ -29,3 +29,5 @@ lunes 23 de marzo de 2026
 - <https://electro-smith.com/> daisy, microcontrolador para sonido
 
 - chompiclub
+
+- descargamos visualstudiocode y la biblioteca oficial de raspberry pico, la que tiene el ticket azul
