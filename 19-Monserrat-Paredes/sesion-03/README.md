@@ -7,7 +7,7 @@ sofiacartes
 Monserrat-Paredes
 vxlentiinaa
 
-##TAREA Ver el primer capítulo de monty phyton.
+## TAREA Ver el primer capítulo de monty phyton.
 
 ## Nueva placa con microcontrolador: raspberry pi pico 2 w
 
@@ -46,7 +46,7 @@ Lo importante es que tenga el: nombre.cpp(apretar el botón de hacerlo con c++)
 Raspberry Pi, tiene un Main, todo lo que está adentro de main ocurre.
 
 
-##SOLEMNE 01 EL 06 DE ABRIL
+## SOLEMNE 01 EL 06 DE ABRIL
 
 Se busca enviar mensajes distintos, que funcionen a distintas frecuencias, o que incluso si quieren expandan la interacción, agregando un botón en la placa Arduino para enviar distintos mensajes, o agregando un LED extra o un motor o similar a la placa Raspberry para que reaccione a los mensajes.
 
@@ -54,14 +54,14 @@ la nota tiene 1 punto base más 6 puntos evaluados.
 
 los 3 primeros puntos son criterios individuales los 3 siguientes puntos son criterios grupales
 
-individual:
+## Individual:
 
 1 punto por calidad de la presentación oral
 1 punto por bitácora personal textual y visual del trabajo en clases e investigación personal
 1 punto por aportes al README.md grupal de texto y visuales explicativas, por las referencias
 
 
-colectivo:
+## Colectivo:
 
 1 punto por diagrama de flujo del proyecto
 1 punto por calidad del código fuente para enviar y para recibir
