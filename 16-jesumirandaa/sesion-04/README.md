@@ -26,5 +26,5 @@ Pulso sensor A5 -> Negative CND -> A0
 
 conection -> luz
 
-lo logramos yeeeei :)
+lo logramos yeeeei
 
