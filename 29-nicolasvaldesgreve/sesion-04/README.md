@@ -21,3 +21,9 @@ Se intentó hacer el ejercicio de enviar y recibir mensajes mediante el arduino 
 Mosquitto nos falló, por lo que se está tratando de hacer el ejercicio con otro protocolo, que en éste caso es UDP (no se llama así por Diego Portales)
 
 - Protocolo UDP (user datagram protocol): Éste protocolo también sirve para enviar mensajes, pero no le importa si éstos llegan o no, por lo que no es bueno para enviar audio ya que se necesita algo constante y preciso.
+
+---
+
+# Encargo de artista
+
+Mientras estaba buscando artistas o diseñadores que usen electrónica o computación inalámbrica, recordé que vi un video de Laurie Anderson (que en ese momento solo la conocía por su canción ["O Superman"](https://www.youtube.com/watch?v=Vkfpi2H8tOE&list=RDVkfpi2H8tOE&start_radio=1)) en donde estaba bailando con un traje que tenía sensores de movimiento, y cada vez que tocaba ciertas partes de su cuerpo o movía los brazos sonaba una batería, pero no estaba seguro de si era ella la que creó el traje hasta que hoy busqué y me di cuenta que en efecto, el traje es su creación, y no solo creó el traje sino que también hizo un violín de arco de cinta que en vez de tener cuerdas, éste tiene un bacezal magnético. Volviendo al traje, Anderson hizo un concierto en donde performó con ésta prenda y se demostró que cada parte del cuerpo generaba un sonido distinto, logrando así poder mostrar todos los sonidos que hace la batería al mover los brazos, golpear a los costados de su pecho y golpeando sus rodillas. Dejo aquí el link a un clip del concierto: <https://www.youtube.com/watch?v=gRcVqL-2PMA>.
