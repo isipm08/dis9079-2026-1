@@ -156,6 +156,10 @@ Serial.println("Luz apagada. ");
 
 - creamos cuenta con nuestro correo, debiera aparecer un ícono amarillo arriba a la derecha, con mis credenciales, no me aparece nada
 
+- descargar los archivos .ino y .h que dejo aarón en mi respectivo grupo 08 en github
+
+- lo hice mal al principio, me dio este error
+
 
 
 
