@@ -17,23 +17,22 @@
 <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/5ee5e857-3a3e-42a0-8ace-0b8725b25f91" />
 
 
-nos estuvo saliendo solo puntitos durante toda la clase, tratamos con 3 internnet diferentes y usuario de adafruit 
-pero luego cambiamos la contraseña de internet a una mas larga y solo con minusculas y numeros 
+nos estuvo saliendo solo puntitos durante toda la clase, tratamos con 3 hotpost diferentes y usuarios de adafruit, creemos que falló por el uso de mayúsculas y minúsculas mal puestas y ademas los nombres de los hotpost, además de que las contraseñas eran solo de 8 caracteres. Pero luego cambiamos la contraseña de internet a una mas larga (mas de 8 caracteres y solo con minusculas y numeros) 
 con ese cambio resulto al enviar datos.
 
 <img width="1920" height="1008" alt="imagen1" src="https://github.com/user-attachments/assets/634f3f8f-8182-4513-914b-58559216b30c" />
 
-
+## config.h
 ```cpp
 // rellenar
 // reemplazar por las credenciales de aaron
 // o por las de tu cuenta
-#define IO_USERNAME  "Antolavalle"
+#define IO_USERNAME  "udpmontoyamoraga"
 #define IO_KEY       "clave"
 
 
 // reemplazar por nombre y clave de la wifi
-#define WIFI_SSID "iPhone de M "
+#define WIFI_SSID "cata"
 #define WIFI_PASS "clave"
 
 // comment out the following lines if you are using fona or ethernet
