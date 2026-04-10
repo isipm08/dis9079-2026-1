@@ -143,17 +143,17 @@ Se recomienda configurar tu Raspberry Pi usando esa documentación y luego exper
 
 - Un Donkeycar se puede construir a partir de casi cualquier auto a control remoto, sin embargo, si quieres seguir un camino más fácil, compra cualquiera de los autos WL Toys que se indican en la página, en este caso mostraré la documentación DIY del auto
 
-- nos muestran que se pueden pedir las piezas impresas en 3d PLA y nosotros mismos las afinamos
+- Nos muestran que se pueden pedir las piezas impresas en 3d PLA y nosotros mismos las afinamos
 
 ![armado](./imagenes/donkeyArmado.JPG)
 
 fuente: [donkey](https://docs.donkeycar.com/guide/build_hardware/)
 
-- otro paso importantes es el uso de un servoShield que lo debemos conectar a la raspberry pi
+- Otro paso importantes es el uso de un servoShield que lo debemos conectar a la raspberry pi
 
 - El controlador de servos PCA9685 puede controlar hasta 16 dispositivos PWM como servos, controladores de motor, LEDs o casi cualquier cosa que utilice una señal PWM. Se conecta a la Raspberry Pi (o Jetson Nano) mediante el bus GPIO de 40 pines a través de los pines I2C.
 
-- no conocía este controlador en verdad, me sorprende harto que pueda mover tantos dispositivos pwm, brígido
+- No conocía este controlador en verdad, me sorprende harto que pueda mover tantos dispositivos pwm, brígido
 
 ![i2c](./imagenes/I2CPCA.jpg)
 
@@ -163,7 +163,7 @@ fuente: [digipart](https://www.digipart.com/part/PCA9685PW118?kw=PCA9685PW118&ut
 
 ![pinout](./imagenes/pinoutRaspiI2CP.png)
 
-
+- Después de tener esto listo, debemos montar sobre la carcasa del auto, nos dan la opción de agregar una cámara, la Raspberry PI debe quedar conectada cerca del controlador de servos
 
 **Software**
 - debemos seguir una serie de pasos, lo primero es setear nuestra configuración según nuestro sistema operativo, en mi caso sería Windows
