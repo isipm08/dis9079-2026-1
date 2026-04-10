@@ -172,8 +172,44 @@ fuente: [digipart](https://www.digipart.com/part/PCA9685PW118?kw=PCA9685PW118&ut
 
 - Debemos seguir estos 2 pasos que nos indican
 
-- 
+- Estableceremos una serie de pasos en Raspi pero sólo dejaré el primero porque la documentación es demasiado extensa
+
+ ![raspi](./imagenes/raspiSetup.JPG)
 
 - Los componentes de software de Donkeycar deben instalarse en la plataforma robótica que elijas. Raspberry Pi y Jetson Nano cuentan con documentación de instalación, pero también se sabe que funciona en Jetson TX2, Friendly Arm SBC o casi cualquier SBC (computador de placa única) basado en Debian.
 
 - Después de la instalación, crearás la aplicación de Donkeycar a partir de una plantilla. Esta contiene código diseñado para que lo personalices según tu caso particular. No te preocupes, comenzaremos con configuraciones predeterminadas útiles.
+
+**Crear la aplicación del auto**
+
+- Hay dos formas de configurar Donkeycar, ambas crean un archivo personalizado myconfig.py que tendrás en tu directorio mycar.
+
+- La primera es la más fácil: utiliza el configurador web y simplemente recorre las pestañas seleccionando las opciones necesarias según tu configuración.
+
+- Para la mayoría de las personas, la primera pestaña (Hardware) es suficiente para confirmar qué tipo de tren de tracción y qué joystick/control estás usando.
+
+- Luego guarda el archivo myconfig.py generado en tu computador y transfiérelo a tu Raspberry Pi usando tu aplicación de transferencia FTP favorita, como FileZilla.
+
+- Si está utilizando una placa controladora de servos PCA9685, asegúrese de poder verla en I2C.
+
+- Existe una serie larga de pasos adicionales que no añadiremos para ir a explicar cómo se maneja el auto
+
+**Manejar el auto**
+
+- Coloca tu auto en un lugar seguro donde las ruedas no toquen el suelo.
+
+- Este es el momento en que el auto puede salir disparado.
+
+- Abre la carpeta de tu auto e inícialo:
+
+- cd ~/mycar
+- python manage.py drive
+
+- Este script iniciará el ciclo de conducción de tu auto, que incluye un componente que actúa como servidor web para que puedas controlarlo.
+
+- Ahora puedes controlar tu auto desde un navegador web en la dirección:
+- <nombre-de-tu-auto.local>:8887
+
+- Lo que entiendo, con mis palabras, es que dentro de la raspi que está conectada a wifi, existe un servidor web en el que tenemos iniciado nuestro código de python,en el cuál podríamos cambiar ciertos parámetros, al conectarnos a este servidor web y abrir la carpeta del auto en python, podemos manejarlo, la verdad es muy complejo de entender. Se parece a cuando intentamos establecer conexión con el mqtt de raspi, conectábamos raspi a wifi, dentro de ese raspi estaba el servidor mqtt con un cierto seteo, es algo parecido lo que imagino
+
+![
