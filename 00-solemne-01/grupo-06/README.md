@@ -68,17 +68,29 @@ Como no logramos solucionar el error del puerto, fuimos al LID a ver si alguien 
 
 ![Aarón corrigiendo nuestro código](./imagenes/ayudadeaaronenlid.jpeg)
 
+Luego conversar por un rato, llegamos a la conclusión de que en vez de usar un Raspberry Pi Pico 2 W podíamos usar otra Arduino UNO R4 WiFi, lo cual no sabíamos que era una opción pero nos alivió mucho ya que usar la Raspberry era un poco complicado tanto en Arduino IDE como en Visual Studio Code.
+
 ---
 
 ## Prueba LED en sistema recibir
 
+Para probar si respondía el Adafruit IO al LED con el código, unimos un LED junto a una resistencia de 220 Ω a la placa Arduino mediante cables Dupont, lo cual terminó viendose así:
+
 ![Circuito con LED en Arduino](./imagenes/pruebaledsinpotenciometro.jpeg)
+
+Luego de tener listo el circuito, añadimos un Feed llamado ``brillo-led`` el cual era para poder manejar la luz del LED mediante Adafruit IO. Dentro del Dashboard se creó un block de ``Togle`` al cual se le asignó el feed de ``brillo-led``, el cual se esperaba que pudiera apagar y encender la luz del LED que estaba conectado a la placa. Al correr el código pasó ésto: 
 
 ![On/Off sin responder](./imagenes/pruebalederror.gif)
 
+Como se puede ver en el gif, no pasó nada. Cuando vimos que el LED no reaccionaba, revisamos el código y nos dimos cuenta de lo siguiente:
+
 ![Error en código, LED no declarado](./imagenes/lednodeclarado.jpeg)
 
+Nos tiraba error ya que el "led" no estaba declarado, por lo que corregimos eso y subimos nuevamente el código por lo que quedó así:
+
 ![Arreglo en declaración de LED](./imagenes/leddeclarado.jpeg)
+
+Al correr nuevamente el código no salió ningún error pero solo salía que estaba conectando a Adafruit y aparecían muchos puntitos, por lo que nunca logró conectarse en realidad.
 
 ---
 
