@@ -10,17 +10,17 @@
 
 ## Descripción del proyecto
 
-El proyecto que realizaremos consiste en la comunicación entre dos placas (Arduino Uno R4 Wifi - Raspberry Pi Pico 2W) conectadas a distintos computadores mediante internet (llamado "si"), utilizando Adafruit IO como intermediario. La idea principal de nuestro proyecto es enviar información desde un dispositivo físico y representarla en otro en tiempo real. 
+El proyecto que realizaremos consiste en la comunicación entre dos placas Arduino UNO R4 WiFi conectadas a distintos computadores mediante internet (llamado "si"), utilizando Adafruit IO como intermediario. La idea principal de nuestro proyecto es enviar información desde un dispositivo físico y representarla en otro en tiempo real. 
 
 En este caso, los componentes que utilizamos son:
-+ Potenciómetro conectado a Arduino Uno R4 Wifi, el cual envía valores a la nube.
+
 + LED
 + Resistencia de 220 Ω
 + Cables Dupont para formar la conexión entre las placas y componentes
   
 ---
 
-## Sistema Enviar
+## Sistema Enviar - Primera Idea
 
 Primero iniciamos probando el conectar el Arduino UNO R4 WiFi a un potenciómetro y que éste mande información a Adafruit, por lo que conectamos la placa Arduino al potenciómetro mediante cables Dupont, teniendo las siguientes conexiones:
 
@@ -40,9 +40,13 @@ Luego, si presionábamos en el feed de ``brillo-led``, nos permitía ver un grá
 
 ![Gráfico de información que recibió Adafruit](./imagenes/pruebabrilloledadafruitio.png)
 
+## Sistema Enviar - Proyecto Final
+
+
+
 ---
 
-## Sistema Recibir
+## Sistema Recibir - Primera Idea
 
 Como nuestra idea era poder controlar el brillo del LED de una placa a otra, decidimos que en la Raspberry iría el LED ya que en ya habíamos logrado conectar el potenciómetro al Arduino. Como no sabíamos como hacer conexiones con ésta placa y no entendímos los textos que habían en ella, tuvimos que buscar imagenes de referencia para poder reconocer los Pins de la placa y para qué sirve cada una, por lo que encontramos ésta imagen:
 
@@ -59,6 +63,8 @@ Cuando íbamos a correr el código en Arduino IDE nos dimos cuenta que para pode
 Cuando por fin subimos el código, nos salió un error en donde se menciona un puerto serial y por lo que buscamos en internet esto suele pasar bastante con las placas Raspberry Pi, pero a pesar de eso seguimos intentando, y cuando nos dimos cuenta de que ya llevábamos horas en eso decidimos buscar ayuda en el Laboratorio de Interacción Digital (LID).
 
 ![Error de puerto en Raspberry Pi Pico 2 W](./imagenes/error-arduinoide.jpeg)
+
+## Sistema Enviar - Proyecto Final
 
 ---
 
@@ -112,6 +118,9 @@ BOM Final
 
 | Componente | Cantidad | Valor Unidad | Link |
 | --- | --- | --- | --- |
+| Diodo LED | 1 | $70 | <https://afel.cl/products/diodo-led-5mm-ultrabrillante-rojo?srsltid=AfmBOoqRs9WauSkvkWECyOR_iyVpwsim5QBZGM6EE1L0-aXGRZKD_1eJ> |
+| Resistencia 220 | 1 | $413 | <https://altronics.cl/pack-10-resistencias-220ohm-025watt-1porciento> |
+| Cables Dupont (Pack 40 uni.) | 1 | $2.590 | <https://mcielectronics.cl/shop/product/cable-dupont-macho-macho-20cm-pack-40-unidades/?srsltid=AfmBOooI8-36HQsjC83sDGqLy-uZ_ht-tuw0nwyKZnloJfamdRdmCWYI> |
 | Arduino UNO R4 WiFi | 2 | $38.990 | <https://arduino.cl/producto/arduino-uno-r4-wifi/?srsltid=AfmBOopJcCsivMRX00i4ZKVCJATlhSM2Bc6SCRhEdXzw6r1x08Ui9740> |
 
 ## Código usado con Adafruit IO
