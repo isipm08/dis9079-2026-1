@@ -308,9 +308,11 @@ Lo segundo que hicimos, fue averiguar sobre Adafruit, ya que esta web iba ser la
 
 ### documentación final
 
-<img src="./imagenes/OLEDfinal.gif" alt="final" width="300">
+<img src="./imagenes/OLEDfinal.gif" alt="final" width="500">
 
-<img src="./imagenes/interaccion.gif" alt="final" width="300">
+<img src="./imagenes/interaccion.gif" alt="final" width="500">
+
+<img src="./imagenes/imagenFinal.jpg" alt="final" width="500">
 
 ## investigaciones individuales
 
