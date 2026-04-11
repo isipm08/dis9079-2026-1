@@ -34,6 +34,8 @@ imágenes que simulan fenómenos naturales.
 Otra obra notable de Ludy es *"SubSurface Hell"*, para Bitforms Gallery.
 en esta instalación se distribuyen en el espacio imágenes personales de la vida cotidiana de Sara, fotos que venía recolectando desde el año 2000 y que tenía guardada en una carpeta con el nombre de *SubSurface Hell*, estás imágenes son reconocibles en forma, pero se desvinculan de sus experiencias y contextos originales.
 
+En la mayoría de sus obras Sara fusiona el uso de el software y el hardware para crear imágenes y animaciones,para simular fenómenos físicos, está artista logra transformar lo que se considera como inerte y frío en algo de aspecto orgánico, los componentes eléctricos pasan a ser parte de sus obras y no solo un medio para realizarlas.
+
 
 
 
