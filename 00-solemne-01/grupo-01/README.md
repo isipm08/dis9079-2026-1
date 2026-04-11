@@ -458,6 +458,23 @@ if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_I2C_ADDR)) {
     }
 ```
 
+### Aprendizajes
+
+Aprendimos como grupo a ser constantes y no rendirnos hasta lograr el objetivo deseado, en este encargo la pasamos muy bien.
+
+`Aprendimos:`
+
+1. Como funciona la comunicación inalámbrica: Que los dispositivos pueden "hablar" entre sí, sin la necesidad de un cable, solo usando WIFI. Con esto pudimos entender el envío y recepción de datos como por ejemplo: feeds y dashboards
+2. Como funciona los hardware, software, plataformas de la nube, interfaz, etc.
+3. Sobre la integración de tecnologías a proyectos: como hacer que varias cosas distintas funcionen juntas, en este caso: la electrónica, la programación, la interfaz y el internet.
+4. En este proyecto, se nos permitió aprender y entender las interacciones inalámbricas como sistemas que conectan lo físico y lo digital, donde el usuario puede influir a distancia en un objeto, generando nuevas formas de comunicación, control y experiencia.
+5. Aprendimos a interconectar arduinos a una red wifi en donde podemos mandar señales y que la otra perosna la reciba, o al revés, que ellos manden una señal y nosotras recibirlas.
+6. También logramos hacer que el botón mandara el estado de encendido y apagado y se podía ver en la data de Adafruit; teníamos que mantener apretado el botón unos tres segundos y en la data aparecía `ON`
+
+|1|2|
+|---|---|
+| <img src="./imagenes/vxlentiinaa_imagenes/estado.gif" alt="estado" width="300"> | <img src="./imagenes/vxlentiinaa_imagenes/data.gif" alt="data" width="300"> |
+
 ## investigaciones individuales
 
 [sofiacartes.md](./persona-01.md)
