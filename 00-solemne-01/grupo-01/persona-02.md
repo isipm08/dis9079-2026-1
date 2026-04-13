@@ -11,97 +11,98 @@ También ofrece recursos y tutoriales para ayudar a los usuarios a iniciar sus p
 Proyectos de IoT: son sistemas que conectan hardware (sensores/actuadores) a internet para monitorear y controlar dispositivos remotamente.
 
 Incluye bibliotecas para lenguajes como CircuitPython, Arduino, Python y otros, lo que facilita la integración de dispositivos. 
+
 https://io.adafruit.com/welcome 
 
 
 ## Investigación: Tutoriales de Adafruit IO
 
--Qué es Adafruit IO (plataforma IoT para almacenar y compartir datos).
+- Qué es Adafruit IO (plataforma IoT para almacenar y compartir datos).
 
--Cómo crear feeds (canales de datos).
+- Cómo crear feeds (canales de datos).
 
--Cómo conectar hardware (Arduino / ESP) a internet.
+- Cómo conectar hardware (Arduino / ESP) a internet.
 
--Cómo enviar (publish) y recibir (subscribe) datos.
+- Cómo enviar (publish) y recibir (subscribe) datos.
 
 
 ## Conceptos clave aprendidos
 
--Feed: espacio donde se guardan datos (ej: contador).
+- Feed: espacio donde se guardan datos (ej: contador).
 
--Publish: enviar datos a la nube.
+- Publish: enviar datos a la nube.
 
--Subscribe: recibir datos desde la nube.
+- Subscribe: recibir datos desde la nube.
 
--Dashboard: visualización de datos.
+- Dashboard: visualización de datos.
 
--IO_KEY: clave privada de acceso.
+- IO_KEY: clave privada de acceso.
 
--IO_USERNAME: usuario.
+- IO_USERNAME: usuario.
 
 
 ## Sirve para:
 
--Enviar datos de sensores.
+- Enviar datos de sensores.
 
--Ej: temperatura, luz, humedad.
+- Ej: temperatura, luz, humedad.
 
--Mandar estados o eventos.
+- Mandar estados o eventos.
 
--Ej: “botón presionado”, “LED encendido”.
+- Ej: “botón presionado”, “LED encendido”.
 
--Visualizar datos en paneles.
+- Visualizar datos en paneles.
 
--En Adafruit IO puedes ver gráficos en tiempo real.
+- En Adafruit IO puedes ver gráficos en tiempo real.
 
 
 ## ¿Qué hace el código?
 
 El ejemplo “Publicar” hace:
 
--Se conecta a tu WiFi.
+- Se conecta a tu WiFi.
 
--Se conecta a Adafruit IO con tu usuario y contraseña. 
+- Se conecta a Adafruit IO con tu usuario y contraseña. 
 
--Envía datos a un “feed” (como una variable online).
+- Envía datos a un “feed” (como una variable online).
 
--Repita el envío cada cierto tiempo.
+- Repita el envío cada cierto tiempo.
 
 
 ## Instalación en computador (MacBook Air M4)
 
 Software utilizado:
--Arduino IDE
--Librería Adafruit IO Arduino
+- Arduino IDE
+- Bibliotecas de Adafruit IO Arduino
 
 
 ## Proceso de instalación
--Abrir Arduino IDE.
--Dirigirse al menú lateral izquierdo, icono de Library Manager (ícono lateral izquierdo).
--Buscar: Adafruit IO Arduino.
--Instalar versión 4.3.4 (abril 2026) o superior.
+- Abrir Arduino IDE.
+- Dirigirse al menú lateral izquierdo, icono de Library Manager (ícono lateral izquierdo).
+- Buscar: Adafruit IO Arduino.
+- Instalar versión 4.3.4 (abril 2026) o superior.
 
 
 <img width="445" height="386" alt="Libreria arduino" src="https://github.com/user-attachments/assets/d41cf0e5-0742-459a-81c9-512495ffe6f0" />
 
 
 ## Aprendizajes:
--Las librerías no funcionan solas: necesitan dependencias.
+- Las librerías no funcionan solas: necesitan dependencias.
 
--Arduino automatiza la instalación, pero hay que aceptar manualmente.
+- Arduino automatiza la instalación, pero hay que aceptar manualmente.
 
--La versión de librería puede afectar compatibilidad.
+- La versión de librería puede afectar compatibilidad.
 
 
 ## Creación de cuenta en Adafruit IO
 
--Ingresar a la pagina: https://io.adafruit.com/welcome
+- Ingresar a la pagina: https://io.adafruit.com/welcome
 
--Crear cuenta gratuita (con correo UDP).
+- Crear cuenta gratuita (con correo UDP).
 
--Iniciar sesión.
+- Iniciar sesión.
 
--Acceder a credenciales.
+- Acceder a credenciales.
 
 Así se ve cuando creas la cuenta y configuraciones:
 
@@ -120,17 +121,21 @@ Después de crear la cuenta se ve así el inicio de sesión:
 
 ## Tener en cuenta por seguridad 
 
--NO subir claves a GitHub.
+- NO subir claves a GitHub.
 
--NO compartir públicamente.
+- NO compartir públicamente.
 
--Compartir solo por medios privados.
+- Compartir solo por medios privados.
 
+```cpp
 #define IO_USERNAME "usuario"
 #define IO_KEY "clave"
+```
 
+```cpp
 #define WIFI_SSID "wifi"
 #define WIFI_PASS "password"
+```
 
  Este archivo NO debe subirse completo a GitHub.
 
@@ -139,17 +144,17 @@ Después de crear la cuenta se ve así el inicio de sesión:
 
 El sistema funciona con dos archivos:
 
--5.1 Archivo principal .ino
+- 5.1 Archivo principal .ino
 
 ## Contiene:
 
--Conexión a Adafruit IO.
+- Conexión a Adafruit IO.
 
--Envío de datos.
+- Envío de datos.
 
--Lógica del programa.
+- Lógica del programa.
 
--5.2 Archivo config.h
+- 5.2 Archivo config.h
 
 
 ## Desarrollo Proyecto solemne 01: En clases
@@ -160,18 +165,18 @@ La idea es crear un puente invisible entre un aparato físico (Arduino r4 wifi) 
 
 ## ¿Cómo funciona? 
 
--Arduino (emisor): Es el "cerebro" que está en tu escritorio. Recoge datos y los traduce a un lenguaje que viaja por el aire.
+- Arduino (emisor): Es el "cerebro" que está en tu escritorio. Recoge datos y los traduce a un lenguaje que viaja por el aire.
 
--Wifi (mensajero): Es el túnel invisible que saca la información y la sube a internet.
+- Wifi (mensajero): Es el túnel invisible que saca la información y la sube a internet.
 
--Adafruit IO (la central): Es como un panel de control en la web donde llegan todos los datos. Ahí se guardan, se ordenan y se muestran en una pantalla.
+- Adafruit IO (la central): Es como un panel de control en la web donde llegan todos los datos. Ahí se guardan, se ordenan y se muestran en una pantalla.
 
 
 Objetivo: al presionar el botón enviara una señal al código para que diera la señal de 0 o 1 y luego visualizar los datos en  Adafruit IO para ver gráficos en tiempo real.
 
--0= no presionar el botón.
+- 0= no presionar el botón.
 
--1=presionar el boton.
+- 1=presionar el boton.
 
 
 ## Elementos clave del código: usamos el wifi de la Vale
@@ -179,12 +184,12 @@ Credenciales obligatorias:
 #define IO_USERNAME "vxlentiinaa"
 #define IO_KEY "xxxx"
 
--Sin esto, Arduino no puede conectarse
+- Sin esto, Arduino no puede conectarse
 
 ## Función importante:
 io.run();
--Mantiene la conexión activa
--Permite recibir datos
+- Mantiene la conexión activa
+- Permite recibir datos
 
 ## Creación de feed:
 AdafruitIO_Feed *nombreFeed = io.feed("grupo01");
