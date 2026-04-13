@@ -35,6 +35,6 @@ lunes 13 abril 2026
 ### stylophone
 * STYLOPHONE S1
 * Theremin usa antenas para producir sonidos,mas lejos la mano suena mas el volumen, si lo toca se apaga con la otra antena vertical se detecta la distancia y con eso oscila las notas, hay un chileno que usa esto llamado martin benavides
-
+![Gato usando theremin](./imagenes/cat_plays_theremin.gif)
 
 
