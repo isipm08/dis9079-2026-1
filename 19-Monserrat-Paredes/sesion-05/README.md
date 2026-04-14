@@ -470,25 +470,3 @@ Planta Nómada Fitocrista errantis:
 Uso de Tecnología: Robótica autónoma y sensores de agua.
 
 Así como nosotros configuramos una clave de WiFi para que nuestro Arduino se conecte, Gilberto Esparza configura sus robots para que 'entiendan' la red de contaminación de un río, transformando un dato invisible en una acción física.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
