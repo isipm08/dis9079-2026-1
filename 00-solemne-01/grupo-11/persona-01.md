@@ -4,8 +4,6 @@ investigaciones individuales
 
 ## sobre adafruit i/o
 
-### Sobre Adafruit IO
-
 En este proceso de aprendizaje trabajé con la plataforma Adafruit IO, una plataforma en la nube orientada al Internet de las Cosas (IoT), que permite conectar dispositivos físicos a internet para enviar, recibir y visualizar datos en tiempo real.
 
 Mi objetivo fue aprender a conectar el Arduino Uno R4 WiFi a internet para enviar datos y controlarlos a través de dashboards.
