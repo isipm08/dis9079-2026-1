@@ -43,6 +43,8 @@ Flujo de información: Este referente me sirve mucho para entender a gran escala
 
 El diseño de la interacción: El valor de este proyecto no está en el dibujo final, sino en el diseño del sistema de comunicación entre los dispositivos. Me hace pensar en que, al trabajar con electrónica inalámbrica, el desafío real del diseño digital es lograr que esa transferencia de datos sea fluida y tenga sentido para el usuario, logrando que la interfaz entre el mundo físico y el digital sea casi imperceptible.
 
+![DOUG](imagenes/DOUG1.png)  
+
 ### Bibliografía
 
 • Sougwen Chung. (s.f.). Drawing Operations Unit Generation (DOUG). Recuperado de: https://sougwen.com  
