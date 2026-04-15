@@ -117,8 +117,6 @@ Tipos de obras que hace.
 
 ## Bibliografía
 
-**Referencias**
-
 Adafruit. (2015). *Welcome to Adafruit IO*. Adafruit Learning System. [https://learn.adafruit.com/welcome-to-adafruit-io](https://learn.adafruit.com/welcome-to-adafruit-io)
 
 Adafruit. (s.f.). *Adafruit IO Basics*. Adafruit Learning System. [https://learn.adafruit.com/series/adafruit-io-basics](https://learn.adafruit.com/series/adafruit-io-basics)
