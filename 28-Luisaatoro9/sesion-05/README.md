@@ -67,13 +67,13 @@ Mi investigación se centró en configurar **Adafruit IO** como centro de mando:
 
 ### Referencias
 
-Adafruit. (s.f.). *Adafruit IO basics: Digital output (Arduino setup)*. https://learn.adafruit.com/adafruit-io-basics-digital-output/arduino-setup
+* Adafruit. (s.f.). *Adafruit IO basics: Digital output (Arduino setup)*. https://learn.adafruit.com/adafruit-io-basics-digital-output/arduino-setup
 
-Adafruit. (s.f.). *Adafruit IO basics: Feeds*. https://learn.adafruit.com/adafruit-io-basics-feeds
+* Adafruit. (s.f.). *Adafruit IO basics: Feeds*. https://learn.adafruit.com/adafruit-io-basics-feeds
 
-Adafruit. (s.f.). *Welcome to Adafruit IO*. https://learn.adafruit.com/welcome-to-adafruit-io
+* Adafruit. (s.f.). *Welcome to Adafruit IO*. https://learn.adafruit.com/welcome-to-adafruit-io
 
-Adafruit IO. (s.f.). *API documentation: Limits*. https://io.adafruit.com/api/docs/#limits
+* Adafruit IO. (s.f.). *API documentation: Limits*. https://io.adafruit.com/api/docs/#limits
 
-Arduino. (s.f.). *WiFi examples (UNO R4 WiFi)*. https://docs.arduino.cc/tutorials/uno-r4-wifi/wifi-examples/
+* Arduino. (s.f.). *WiFi examples (UNO R4 WiFi)*. https://docs.arduino.cc/tutorials/uno-r4-wifi/wifi-examples/
 
