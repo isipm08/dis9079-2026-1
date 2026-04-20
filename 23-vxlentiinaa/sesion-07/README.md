@@ -117,3 +117,5 @@ void loop()
 ```
 
 <img src="./imagenes/arduino_servo.png" alt="servo" width="600">
+
+<img src="./imagenes/servo.gif" alt="servo" width="300">
