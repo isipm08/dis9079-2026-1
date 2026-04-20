@@ -28,3 +28,19 @@ mas voltaje - eficiente
 
 5 -eficiente, 3.3 +eficiente
 
+thinkercad revisar pagina
+
+GND es ground que es tierra xd
+
+conectar gnd al negativo y el 5V al positivo 
+
+potenciometro ponerlo en 3 lugares distintos
+
+una de sus patas en positivo
+
+la otra pata extrema en negativo
+
+la pata del medio se pone en un lugar analogico del arduino
+
+el arduino debe leer el potenciometro con un codigo
+
