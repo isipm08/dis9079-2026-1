@@ -18,17 +18,17 @@ Materiales que usaremos en clases:
 
 - Motor servo (servomotores), tiene 3 terminales:
 
-Terminal positivo: Recibe la alimentación del motor (4 a 8 voltios)
+1. Terminal positivo: Recibe la alimentación del motor (4 a 8 voltios)
 
-Terminal negativo: Referencia tierra del motor (0 voltios)
+2. Terminal negativo: Referencia tierra del motor (0 voltios)
 
-Entrada de señal: Recibe la señal de control del motor
+3. Entrada de señal: Recibe la señal de control del motor
 
 ## APUNTES
 Apuntes maquinas: Libro de todos los conocimientos que pasan el ramo de taller de Maquinas electronicas
 
-Placa de pruebas (protoboard): circulan electrones
 
+## Placa de pruebas (protoboard): circulan electrones
 
 Contiene 2 emisferios:
 
@@ -36,18 +36,19 @@ Emisferio izquierdo, emisferio derecho, funcionan independiente
 
 Lo que conectas en uno sigue para todos, ya sea positivo o negativo
 
-
 Voltaje de alimentacion:
 positivo, se usa generalmente un cable rojo (positivo)
 negativo: negro, cafe y verde 
 
 Letras y numeros:
+
 columnas (letras) y filas (numeros)
 
 GND: tierra
+V3, V5: voltaje
 
 
-Tinkercad
+## Tinkercad
 
 https://www.tinkercad.com/
 
@@ -86,10 +87,13 @@ void loop()
 
 
 
+
 <img width="631" height="636" alt="TICKERCAD" src="https://github.com/user-attachments/assets/023f0809-6819-4d0e-b945-770ce3fe7345" />
 
 
+
 Despues de probarlo, fuimos mejorando el codigo en clases para seguir avanzando y que el motor servo funcione
+
 
 ```cpp
 // ejemplo lectura potenciometro
