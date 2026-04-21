@@ -8,9 +8,32 @@
 
 ## descripción del proyecto
 
-Para llegar a la conexión del LED RGB primero tuvimos que tener una cuenta de Adafruit que en este caso nos proporcionó una mejora el profesor para tener la cuenta de pago y esta la hicimos cada uno para testear individualmente con nuestros correos UDP.
+Consiste en un circuito que permite controlar un LED RGB de forma remota. A través de un dashboard en la nube (Adafruit IO), el usuario selecciona un color que se transmite vía Wi-Fi a un Arduino, el cual procesa la información y activa los pines físicos para igualar el color digital en un LED a tiempo real.
 
-Habiendo iniciado sesión vamos a configuraciones para darle al botón que nos da la clave AIO que necesitaremos más tarde.
+## proceso
+
+Empezamos el proyecto explorando la biblioteca de aprendizaje de Adafruit IO, encontramos un tutorial en [Adafruit IO](https://learn.adafruit.com/adafruit-io-basics-color) explicando la posibilidad de enviarle una señal desde Adafruit al Arduino, de forma que se puede lograr cambiar los colores RGB de manera remota, sin cables y hasta desde otro dispositivo electrónico.
+
+Dicho esto, unimos las conexiones del RGB al protoboard y del protoboard al Arduino:
+
+Lo primero sería conectar las 4 patas del LED RGB al protoboard, después poner 3 resistencia de 220Ω.
+
+Debe quedar así:
+
+![LED conectado a arduino](./imagenes/circuitoled.jpg)
+
+### conexiones
+
+patas del LED, (R) (G) y (B) cada uno debe ir acompañado de una resistencia para no quemar el LED
+
+- patita 1 (R) a pin 4
+- patita 2 (ánodo) a vcc
+- patita 3 (G) a pin 5
+- patita 4 (B) a pin 2
+
+Para llegar a la conexión del LED RGB primero tuvimos que tener una cuenta de Adafruit que en este caso nos proporcionó una mejora el profesor para tener la cuenta de pago y la creamos cada uno para testear individualmente con nuestros correos UDP.
+
+Habiendo iniciado sesión vamos a “Configuración” y obtenemos la clave AIO que necesitaremos más tarde.
 
 Procedimos a la creación del flujo del color creando una Feed llamada específicamente "color".
 
@@ -18,23 +41,23 @@ A continuación en la sección de "Dashboards" agregamos un bloque de color ingr
 
 ![Ejemplo de Bloque de color](./imagenes/bloquecolorgrupo.png)
 
-**Configuración de arduino**
+### configuración de arduino
 
-En nuestro caso usaremos Arduino UNO R4 WIFI, por ende tiene una configuración correspondiente al hardware y, como dice el nombre, sí tiene "wifi", que también usaremos, y antes de continuar asegurarnos de tener instalada al menos la versión 2.4.0 de la biblioteca Adafruit IO Arduino.
+En nuestro caso usaremos Arduino UNO R4 WIFI, por ende tiene una configuración correspondiente al hardware y, como dice el nombre, sí tiene "WiFi", que también usaremos, y antes de continuar asegurarnos de tener instalada al menos la versión 2.4.0 de la biblioteca Adafruit IO Arduino.
 
 Y como nos indicaba la instrucción, descargamos adafruitio_13_rgb en la biblioteca Adafruit IO Arduino, que es el que tiene el código RGB para el LED.
 
 ![Código del RGB](./imagenes/adafruito13rgb.png)
 
-Ahora pocedemos a hacer
+Ahora procedemos a hacer
 
-**La configuración de red arduino**
+### la configuración de red Arduino
 
 Primero vamos a la App de Arduino IDE y presionamos config.h, ahí tenemos que poner nombre de usuario de Adafruit IO en la sección de IO_USERNAME y la clave de Adafruit IO en la sección IO_KEY.
 
-Ya que usamos unas placas de WIFI compatibles, aparece para modificar las opciones WIFI_SSID y WIFI_PASS en config.h. "Existen más opciones de conexión, pero como solo usaremos WIFI, esta es la que necesitamos".
+Ya que usamos unas placas de WiFi compatibles, aparece para modificar las opciones WIFI_SSID y WIFI_PASS en config.h. "Existen más opciones de conexión, pero como solo usaremos WiFi, esta es la que necesitamos".
 
-Acá ejemplos de dónde debería ir lo que mencionamos:
+Aquí hay ejemplos de dónde debería ir lo que mencionamos:
 
 ![username ejemplo](./imagenes/usernameandkey.png)
 
@@ -51,15 +74,191 @@ Los valores aparecen tanto en el monitor serial como en la sección de Feeds mie
 - 1x Arduino UNO R4 WiFi
 - 1x LED RGB
 - 1x Protoboard
-- 3x Resistencias 220Ω
+- 3x Resistencias de 220Ω
 - 4x Cables dupont (m-m)
 
 ## código usado con Adafruit IO
 
 ### código para enviar
 
+### código base de biblioteca de Adafruit IO 
+
+example: adafruitio_13_rgb
+
 ```cpp
-// rellenar
+// Adafruit IO RGB LED Output Example
+// Tutorial Link: https://learn.adafruit.com/adafruit-io-basics-color
+//
+// Adafruit invests time and resources providing this open source code.
+// Please support Adafruit and open source hardware by purchasing
+// products from Adafruit!
+//
+// Written by Todd Treece for Adafruit Industries
+// Copyright (c) 2016-2017 Adafruit Industries
+// Licensed under the MIT license.
+//
+// All text above must be included in any redistribution.
+
+/************************** Configuration ***********************************/
+
+// edit the config.h tab and enter your Adafruit IO credentials
+// and any additional configuration needed for WiFi, cellular,
+// or ethernet clients.
+#include "config.h"
+
+/************************ Example Starts Here *******************************/
+
+// default PWM pins for ESP8266.
+// you should change these to match PWM pins on other platforms.
+#define RED_PIN 4
+#define GREEN_PIN 5
+#define BLUE_PIN 2
+
+// set up the 'color' feed
+AdafruitIO_Feed *color = io.feed("color");
+
+void setup() {
+
+  // start the serial connection
+  Serial.begin(115200);
+
+
+
+  // wait for serial monitor to open
+  while (!Serial)
+    ;
+
+#if defined(ARDUINO_ARCH_ESP32) // ESP32 pinMode
+#if ESP_IDF_VERSION >= ESP_IDF_VERSION_VAL(5, 1, 1)
+  // New ESP32 LEDC API
+  ledcAttach(RED_PIN, 12000, 8); // 12 kHz PWM, 8-bit resolution
+  ledcAttach(GREEN_PIN, 12000, 8);
+  ledcAttach(BLUE_PIN, 12000, 8);
+#else
+  // Legacy ESP32 LEDC API
+  ledcAttachPin(RED_PIN, 1);
+  ledcAttachPin(GREEN_PIN, 2);
+  ledcAttachPin(BLUE_PIN, 3);
+  ledcSetup(1, 12000, 8);
+  ledcSetup(2, 12000, 8);
+  ledcSetup(3, 12000, 8);
+#endif
+#else
+  pinMode(RED_PIN, OUTPUT);
+  pinMode(GREEN_PIN, OUTPUT);
+  pinMode(BLUE_PIN, OUTPUT);
+#endif
+
+  // connect to io.adafruit.com
+  Serial.print("Connecting to Adafruit IO");
+  io.connect();
+
+  // set up a message handler for the 'color' feed.
+  // the handleMessage function (defined below)
+  // will be called whenever a message is
+  // received from adafruit io.
+  color->onMessage(handleMessage);
+
+  // wait for a connection
+  while (io.status() < AIO_CONNECTED) {
+    Serial.print(".");
+    delay(500);
+  }
+
+  // we are connected
+  Serial.println();
+  Serial.println(io.statusText());
+  color->get();
+
+// set analogWrite range for ESP8266
+#ifdef ESP8266
+  analogWriteRange(255);
+#endif
+}
+
+void loop() {
+
+  // io.run(); is required for all sketches.
+  // it should always be present at the top of your loop
+  // function. it keeps the client connected to
+  // io.adafruit.com, and processes any incoming data.
+  io.run();
+}
+
+// this function is called whenever a 'color' message
+// is received from Adafruit IO. it was attached to
+// the color feed in the setup() function above.
+void handleMessage(AdafruitIO_Data *data) {
+
+  // print RGB values and hex value
+  Serial.println("Received:");
+  Serial.print("  - R: ");
+  Serial.println(data->toRed());
+  Serial.print("  - G: ");
+  Serial.println(data->toGreen());
+  Serial.print("  - B: ");
+  Serial.println(data->toBlue());
+  Serial.print("  - HEX: ");
+  Serial.println(data->value());
+
+  // invert RGB values for common anode LEDs
+  analogWrite(RED_PIN, 255 - data->toRed());
+  analogWrite(GREEN_PIN, 255 - data->toGreen());
+  analogWrite(BLUE_PIN, 255 - data->toBlue());
+}
+
+```
+config.h
+
+```cpp
+/************************ Adafruit IO Config *******************************/
+
+// visit io.adafruit.com if you need to create an account,
+// or if you need your Adafruit IO key.
+#define IO_USERNAME "udpmontoyamoraga"
+#define IO_KEY "blabla"
+
+#define WIFI_SSID "iPhone-Antonella"
+#define WIFI_PASS "blabla"
+
+// uncomment the following line if you are using airlift
+// #define USE_AIRLIFT
+
+// uncomment the following line if you are using winc1500
+// #define USE_WINC1500
+
+// uncomment the following line if you are using mrk1010 or nano 33 iot
+// #define ARDUINO_SAMD_MKR1010
+
+// comment out the following lines if you are using fona or ethernet
+#include "AdafruitIO_WiFi.h"
+
+#if defined(USE_AIRLIFT) || defined(ADAFRUIT_METRO_M4_AIRLIFT_LITE) ||         \
+    defined(ADAFRUIT_PYPORTAL)
+// Configure the pins used for the ESP32 connection
+#if !defined(SPIWIFI_SS) // if the wifi definition isnt in the board variant
+// Don't change the names of these #define's! they match the variant ones
+#define SPIWIFI SPI
+#define SPIWIFI_SS 10 // Chip select pin
+#define NINA_ACK 9    // a.k.a BUSY or READY pin
+#define NINA_RESETN 6 // Reset pin
+#define NINA_GPIO0 -1 // Not connected
+#endif
+AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS, SPIWIFI_SS,
+                   NINA_ACK, NINA_RESETN, NINA_GPIO0, &SPIWIFI);
+#else
+AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
+#endif
+
+/**************************** ETHERNET ************************************/
+
+// the AdafruitIO_Ethernet client will work with the following boards:
+//   - Ethernet FeatherWing -> https://www.adafruit.com/products/3201
+
+// uncomment the following two lines for ethernet,
+// and comment out the AdafruitIO_WiFi client in the WIFI section
+// #include "AdafruitIO_Ethernet.h"
+// AdafruitIO_Ethernet io(IO_USERNAME, IO_KEY);
 ```
 
 ### código para recibir
@@ -68,7 +267,7 @@ Los valores aparecen tanto en el monitor serial como en la sección de Feeds mie
 // rellenar
 ```
 
-## imágenes
+## LED a tiempo real
 
 ![led a tiempo real](./imagenes/ledenclase.gif)
 
