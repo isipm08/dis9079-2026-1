@@ -27,6 +27,10 @@ CircuitPython es un lenguaje de programación diseñado para simplificar la expe
 
 imágen de: <https://circuitpython.org/board/raspberry_pi_pico2_w/>
 
+<img src="./imagenes/pinoutRaspberrypi.jpg" alt="install" width="300">
+
+imágen de: <https://cursos.mcielectronics.cl/2025/08/12/introduccion-a-raspberry-pi-pico-2-y-pico-2-w/>
+
 ### Pasos a seguir
 
 1. Primero descargamos en (Circuit Python)<https://circuitpython.org/board/raspberry_pi_pico2_w/>
@@ -38,7 +42,3 @@ imágen de: <https://circuitpython.org/board/raspberry_pi_pico2_w/>
 7. En la terminal, buscamos usbmodem* *donde nos mostrará donde está conectado el usb*
 8. En este caso: usbmodem11301
 9. Luego, actualizamos y nos aparece los valores del potenciómetro, que deberían llegar al feed de aarón
-
-<img src="./imagenes/pinoutRaspberrypi.jpg" alt="install" width="300">
-
-imágen de: <https://cursos.mcielectronics.cl/2025/08/12/introduccion-a-raspberry-pi-pico-2-y-pico-2-w/>
