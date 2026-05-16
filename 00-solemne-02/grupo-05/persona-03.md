@@ -4,31 +4,31 @@ Nicolás Elías Valdés Greve / [nicolasvaldesgreve](<https://github.com/nicolas
 
 ## Sonitus Lucis - Arturo Yelo
 
-> Ninguna de las imagenes presentadas en esta investigación me pertenecen, todas fueron rescatadas de la página del Museo Cristobal Gabarron en donde se muestra toda la documentación de la exposición de la obra.
+> Ninguna de las imagenes presentadas en esta investigación me pertenecen, todas fueron rescatadas de la página del Museo Cristóbal Gabarrón en donde se muestra toda la documentación de la exposición de la obra.
 
-Arturo Yelo es un artista sonoro nacido en el año 1989 en Abarán ubicado en la Región de Murcia, España. Estudió en el Conservatorio Profesional de Murcia y desarrolló su carrera como saxofonista durante 8 años en la Agrupación Musical de Abarán y otros grupos musicales de rock en donde Mez-K es la que tuvo más éxito, en donde participó durante el Viña Rock 2017.
+Arturo Yelo es un artista sonoro nacido en el año 1989 en Abarán, ubicado en la Región de Murcia, España. Estudió en el Conservatorio Profesional de Murcia y desarrolló su carrera como saxofonista durante 8 años en la Agrupación Musical de Abarán y otros grupos musicales de rock en donde Mez-K es la que tuvo más éxito, en el cual participó durante el Viña Rock 2017.
 
-En el año 2024 Arturo inicia su carrera como artista sonoro con la instalación "1984" la cual se ubicó en Cárcel Vieja de Murcia, pero no trabajó solo en este proyecto, sino que fue ideado por el y desarrollado en colaboración con Juan Jesús Yelo, el cual es el actual secretario de la Asociación Murciana de Arte Sonoro y Música Experimental "Intonarumori" mientras que a la vez imparte talleres para la construcción de micrófonos de contacto y sintetizadores foto sensibles.
+En el año 2024 Arturo inicia su carrera como artista sonoro con la instalación "1984" la cual se ubicó en Cárcel Vieja de Murcia, pero no trabajó de manera solitaria en este proyecto, sino que fue ideado por él y desarrollado en colaboración con Juan Jesús Yelo, el cual es el actual secretario de la Asociación Murciana de Arte Sonoro y Música Experimental "Intonarumori" mientras que a la vez imparte talleres para la construcción de micrófonos de contacto y sintetizadores foto sensibles.
 
-La instalación "Sonitus Lucis" forma parte del programa "Espacio La Bodega", el cual es dedicado a proyectos que exploran nuevas formas de diálogo entre el arte, el espacio y la materia en el cual Sonitus Lucis llega como una propuesta que explora la relación entre la luz, el sonido y la tecnología, invitando así al público a convertirse en parte de ésta obra.
+La instalación "Sonitus Lucis" forma parte del programa "Espacio La Bodega", el cual es dedicado a proyectos que exploran nuevas formas de diálogo entre el arte, el espacio y la materia en el cual Sonitus Lucis llega como una propuesta que explora la relación entre la luz, el sonido y la tecnología, invitando así al público a convertirse en parte de esta obra.
 
 ![Cómo interviene el público en la obra](./imagenes/intervencion-con-luz.png)
 
-Arturo mencionó que la manera en la que nació Sonitus Lucis fue mediante una mezcla de emoción y una idea, lo cual da fruto a una inquietud propia lo cual lo lleva a tener la necesidad de expresarlo, pero se pueden preguntar: ¿por qué mediante un sintetizador? pues durante una entrevista Arturo nos cuenta que lo que lo introdujo al área en el que está trabajando actualmente fue su interés por los sintetizadores de los años 80' de Vangelis (1943 - 2022), lo cual lo llevó a investigar sobre sintetizadores en donde se dio cuenta de que todos son capaces de poder crear su propio sintetizador, razón por la cual se dedicó a eso para poder comunicar sus inquietudes mediante sus creaciones.
+Arturo mencionó que la manera en la que nació Sonitus Lucis fue mediante una mezcla de emoción y una idea, lo cual da fruto a una inquietud propia y lo lleva a tener la necesidad de expresarlo, pero se pueden preguntar: ¿por qué mediante un sintetizador? pues durante una entrevista Arturo nos cuenta que lo que lo introdujo al área en el que está trabajando actualmente fue su interés por los sintetizadores de los años 80' de Vangelis (1943 - 2022), lo cual lo llevó a investigar sobre sintetizadores en donde se dio cuenta de que todos son capaces de poder crear su propio sintetizador, razón por la cual se dedicó a eso para poder comunicar sus inquietudes mediante sus creaciones.
 
-Para Arturo, él considera que el oido es una herramienta que nos sirve para darnos cuenta de que todos podemos llegar a crear arte o algo nuevo que conmueva, razón por la que hizo ésta instalación sonora e interactiva. Lo que permite que ésta obra sea interactiva y el público pueda intervenir cómo quiera el sonido, son los sintetizadores de onda cuadrada que incluyen un componente fotosensible, el cual es un LDR (Light Dependent Resistor) o fotorresistencia que se encuentran en el techo del espacio el cual es el que controla la tonalidad de la frecuencia, es decir, que cuando el público se acerca al LDR con una luz, va a ir aumentando la frecuencia hasta que estés muy cerca del LDR y llegues a su exposición máxima en donde vas a empezar a escuchar la configuración real del sintetizador.
+Para Arturo, él considera que el oído es una herramienta que nos sirve para darnos cuenta de que todos podemos llegar a crear arte o algo nuevo que conmueva, razón por la que hizo esta instalación sonora e interactiva. Lo que permite que ésta obra sea interactiva y el público pueda intervenir cómo quiera el sonido, son los sintetizadores de onda cuadrada que incluyen un componente fotosensible, el cual es un LDR (Light Dependent Resistor) o fotorresistencia que se encuentran en el techo del espacio el cual es el que controla la tonalidad de la frecuencia, es decir, que cuando el público se acerca al LDR con una luz, va a ir aumentando la frecuencia hasta que estés muy cerca del LDR y llegues a su exposición máxima en donde vas a empezar a escuchar la configuración real del sintetizador.
 
 ![LDR que permite la interacción del público mediante las luces](./imagenes/ldr-instalacion.png)
 
 Como mencioné anteriormente, la obra está hecha para que el público sea parte de ésta misma al ser interactiva mediante la luz, por lo cual todo fue montado en una sala oscurecida para que así las personas que estuvieran dentro pudieran utilizar las linternas de sus celulares, así activando el sonido mediante los sensores fotosensibles del LDR los cuales modifican en tiempo real el sonido del sintetizador.
 
-![Cómo interviene el público en la obra](./imagenes/intervencion-con-luz.png)
-
-Tanto la intensidad como el movimiento de la luz influyen en la composición sonora lo cual genera un paisaje auditivo cambiante e irrepetible, todo siendo demostrado de manera visual en el fondo del espacio, lugar en donde se encuentra el sintetizador con controles manuales el cual permite intervenirlo de manera directa y se conecta a una tv de tubo catódico el cual permite visualizar la onda sonora producida, mostrando así la conexión entre lo sonoro y lo visual
+Tanto la intensidad como el movimiento de la luz influyen en la composición sonora lo cual genera un paisaje auditivo cambiante e irrepetible, todo siendo demostrado de manera visual en el fondo del espacio, lugar en donde se encuentra el sintetizador con controles manuales el cual permite intervenir de manera directa y se conecta a una tv de tubo catódico el cual permite visualizar la onda sonora producida, mostrando así la conexión entre lo sonoro y lo visual
 
 ![Visualización en pantalla](./imagenes/visualizacion.png)
 
 ![Sintetizador](./imagenes/sintetizador.png)
+
+
 
 ### Fuentes Artista
 
