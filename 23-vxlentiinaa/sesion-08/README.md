@@ -75,6 +75,7 @@ while True:
 7. En la terminal, buscamos usbmodem* (donde nos mostrará donde está conectado el usb)
 8. En este caso: usbmodem11301
 9. Luego, actualizamos y nos aparece los valores del potenciómetro, que deberían llegar al feed de aarón
+10. [https://io.adafruit.com/udpmontoyamoraga/feeds/potenciometro-grupo08]
 
 <img src="./imagenes/usbmodem.png" alt="usbmodem" width="800">
 
