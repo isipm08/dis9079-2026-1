@@ -25,6 +25,8 @@ Al inicio tuvimos que replantear nuestra idea, ya que no estábamos completament
 
 Luego comenzamos a investigar el cableado de todos los componentes. Esta etapa fue bastante caótica porque no teníamos mucho conocimiento sobre el funcionamiento del sensor ultrasónico, el servo motor ni la conexión correcta del botón y su ubicación en la protoboard.
 
+<img width="899" height="1599" alt="Cableado_sensor distancia" src="https://github.com/user-attachments/assets/9ca381b2-a9fa-41ad-884b-01503b4b7ea2" />
+
 ### Desarrollo del código
 
 Después de resolver gran parte del cableado, comenzamos a desarrollar el código. Esta parte también fue compleja, ya que el proyecto necesitaba manejar más líneas de código y librerías que los ejercicios realizados anteriormente.
